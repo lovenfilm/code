@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f6;
+  text-align: center;
+  padding: 50px;
+}
+
+h1, h2 {
+  color: #d63384;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+/* General button styles */
+.btn {
+  background-color: #ff69b4;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  position: relative; /* needed for moving NO button */
+  min-width: 100px; /* minimum width for all buttons */
+  max-width: 150px; /* max width for all buttons */
+}
+
+/* Special style for the NO button */
+.no-btn {
+  padding: 8px 12px;  /* smaller padding */
+  max-width: 90px;    /* narrower max width */
+  font-size: 14px;    /* slightly smaller font */
+}
+
+/* Disabled button styles (if used) */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+input, button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.cute-cat {
+  width: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+

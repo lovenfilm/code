@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HI Angel!</title>
+  <link rel="stylesheet" href="hi.css" />
+  <style>
+    /* Make sure button position can be changed */
+    .btn {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hi Angel! Will you go out with me?</h1>
+  <div class="button-container">
+    <a href="plan-date.html" class="btn">YES :3</a>
+    <button id="noBtn" class="btn">NO :P</button>
+  </div>
+
+  <img src="https://media1.tenor.com/images/169d4fc870de9d54dcc47ecb88130670/tenor.gif?itemid=15590953" alt="Cute Cat" class="cute-cat">
+
+
+  <script>
+    const noBtn = document.getElementById('noBtn');
+
+    noBtn.addEventListener('mouseover', () => {
+      // Make sure the button is positioned absolutely to move it
+      noBtn.style.position = 'absolute';
+
+      // Calculate max possible left and top (prevent going off screen)
+      const maxLeft = window.innerWidth - noBtn.offsetWidth;
+      const maxTop = window.innerHeight - noBtn.offsetHeight;
+
+      // Generate random positions
+      const randomLeft = Math.floor(Math.random() * maxLeft);
+      const randomTop = Math.floor(Math.random() * maxTop);
+
+      noBtn.style.left = randomLeft + 'px';
+      noBtn.style.top = randomTop + 'px';
+    });
+  </script>
+</body>
+</html>
